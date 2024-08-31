@@ -16,7 +16,7 @@ if hist_button:
     st.plotly_chart(fig, use_container_width=True)
 
 scatter_button = st.button('Construir diagrama de dispercion')
-if sactter_button:
+if scatter_button:
     st.write('Creación de un diagrama de dispercion para el conjunto de datos de anuncios de venta de coches')
     fig = px.scatter(car_data, x="odometer", y="price") 
     st.plotly_chart(fig, use_container_width=True)
